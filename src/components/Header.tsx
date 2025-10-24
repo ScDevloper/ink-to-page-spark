@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "./ui/button";
+import { ThemeToggle } from "./ThemeToggle";
 
 export const Header = () => {
   const scrollToSection = (id: string) => {
@@ -41,28 +42,37 @@ export const Header = () => {
             <div className="text-xs text-muted-foreground">Digital Printing</div>
           </div>
 
-          <div className="hidden md:flex items-center gap-6">
-            <button
-              onClick={() => scrollToSection("home")}
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
-              Home
-            </button>
-            <button
-              onClick={() => scrollToSection("services")}
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
-              Services
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
-              Contact
-            </button>
-            <Button onClick={() => scrollToSection("contact")} size="sm">
-              Get Quote
-            </Button>
+          <div className="flex items-center gap-4">
+            <div className="hidden md:flex items-center gap-6">
+              <button
+                onClick={() => scrollToSection("home")}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              >
+                Home
+              </button>
+              <button
+                onClick={() => scrollToSection("services")}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              >
+                Services
+              </button>
+              <button
+                onClick={() => scrollToSection("faq")}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              >
+                FAQ
+              </button>
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              >
+                Contact
+              </button>
+              <Button onClick={() => scrollToSection("contact")} size="sm">
+                Get Quote
+              </Button>
+            </div>
+            <ThemeToggle />
           </div>
         </nav>
       </div>
