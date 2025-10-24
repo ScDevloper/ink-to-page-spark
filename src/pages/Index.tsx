@@ -1,21 +1,23 @@
+import { Header } from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Contact from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Hero />
-      <Services />
-      <Contact />
-      
-      <footer className="bg-foreground/5 py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-muted-foreground">
-            © {new Date().getFullYear()} PRIZM by SC Printing. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <Header />
+      <div id="home">
+        <Hero />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
+      <Footer />
     </div>
   );
 };
