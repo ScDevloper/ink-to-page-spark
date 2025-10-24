@@ -1,6 +1,13 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-printing.jpg";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import heroImage1 from "@/assets/hero-printing.jpg";
+import heroImage2 from "@/assets/hero-printing-2.jpg";
+import heroImage3 from "@/assets/hero-printing-3.jpg";
+import heroImage4 from "@/assets/hero-printing-4.jpg";
 import { ArrowRight } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
+
+const heroImages = [heroImage1, heroImage2, heroImage3, heroImage4];
 
 const Hero = () => {
   const scrollToServices = () => {
@@ -13,16 +20,34 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      <div 
+      <Carousel
         className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+        opts={{
+          loop: true,
         }}
+        plugins={[
+          Autoplay({
+            delay: 5000,
+          }),
+        ]}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/70" />
-      </div>
+        <CarouselContent>
+          {heroImages.map((image, index) => (
+            <CarouselItem key={index}>
+              <div
+                className="absolute inset-0 z-0"
+                style={{
+                  backgroundImage: `url(${image})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/70" />
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
       
       <div className="container mx-auto px-4 z-10 relative">
         <div className="max-w-3xl">
