@@ -50,7 +50,7 @@ const Hero = () => {
       </Carousel>
       
       <div className="container mx-auto px-4 z-10 relative">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl backdrop-blur-md bg-background/80 p-8 md:p-12 rounded-2xl border border-border/50 shadow-2xl">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-4 duration-1000">
             PRIZM
           </h1>
