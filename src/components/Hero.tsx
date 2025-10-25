@@ -31,11 +31,11 @@ const Hero = () => {
           }),
         ]}
       >
-        <CarouselContent>
+        <CarouselContent className="h-full">
           {heroImages.map((image, index) => (
-            <CarouselItem key={index}>
+            <CarouselItem key={index} className="h-full">
               <div
-                className="absolute inset-0 z-0"
+                className="w-full h-[90vh]"
                 style={{
                   backgroundImage: `url(${image})`,
                   backgroundSize: 'cover',
