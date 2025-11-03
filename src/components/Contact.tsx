@@ -4,18 +4,18 @@ import { Phone, MapPin, Mail, Facebook, Instagram, Linkedin } from "lucide-react
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-4 bg-muted/30">
+    <section id="contact" className="py-12 sm:py-16 md:py-20 px-4 bg-muted/30">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Let's Print Your Vision
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Ready to bring your ideas to life? Get in touch with us today.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto mb-8 md:mb-12">
           <Card className="text-center hover:shadow-elegant transition-all">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mx-auto mb-4">
@@ -62,8 +62,8 @@ const Contact = () => {
         </div>
 
         <div className="text-center">
-          <h3 className="text-2xl font-semibold mb-6">Follow Us</h3>
-          <div className="flex justify-center gap-4 flex-wrap">
+          <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6">Follow Us</h3>
+          <div className="flex justify-center gap-3 md:gap-4 flex-wrap">
             <Button variant="outline" size="lg" asChild>
               <a href="https://www.facebook.com/prizmdigitals/" target="_blank" rel="noopener noreferrer">
                 <Facebook className="mr-2 h-5 w-5" />

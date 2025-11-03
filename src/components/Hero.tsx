@@ -50,19 +50,19 @@ const Hero = () => {
         </CarouselContent>
       </Carousel>
       
-      <div className="container mx-auto px-4 z-10 relative">
+      <div className="container mx-auto px-4 sm:px-6 z-10 relative">
         <div className="max-w-3xl">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-4 duration-1000">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-4 duration-1000">
             PRIZM
           </h1>
-          <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-foreground animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 md:mb-6 text-foreground animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150">
             Your Trusted Digital Printing Partner
           </h2>
-          <p className="text-lg md:text-xl text-foreground/90 mb-8 max-w-2xl animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
+          <p className="text-base sm:text-lg md:text-xl text-foreground/90 mb-6 md:mb-8 max-w-2xl animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
             PRIZM stands at the forefront of digital printing, delivering exceptional quality and innovation. 
             We specialize in premium printing services that cater to businesses, creatives, and individuals.
           </p>
-          <div className="flex flex-wrap gap-4 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
             <Button 
               size="lg" 
               variant="hero"
