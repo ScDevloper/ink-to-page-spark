@@ -35,11 +35,12 @@ const Hero = () => {
           {heroImages.map((image, index) => (
             <CarouselItem key={index} className="h-full">
               <div
-                className="w-full h-[90vh]"
+                className="w-full h-[90vh] backdrop-blur-sm"
                 style={{
                   backgroundImage: `url(${image})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
+                  filter: 'blur(3px)',
                 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/70" />
@@ -50,7 +51,7 @@ const Hero = () => {
       </Carousel>
       
       <div className="container mx-auto px-4 z-10 relative">
-        <div className="max-w-3xl backdrop-blur-md bg-background/30 p-8 rounded-2xl border border-white/10">
+        <div className="max-w-3xl">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-4 duration-1000">
             PRIZM
           </h1>
